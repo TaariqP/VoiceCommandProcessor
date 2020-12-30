@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "node-wordnet": "^0.1.12",
     "wndb-with-exceptions": "^3.0.2"
   },
