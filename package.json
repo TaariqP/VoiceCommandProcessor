@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^7.16.0",
     "node-wordnet": "^0.1.12",
     "wndb-with-exceptions": "^3.0.2"
   }
