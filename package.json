@@ -4,15 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js --dev",
+    "auto": "node server.js --dev --auto",
+    "prod": "node server.js",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "logs": "heroku logs -a voicecommandprocessor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^7.16.0",
     "node-wordnet": "^0.1.12",
     "wndb-with-exceptions": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
