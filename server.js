@@ -3,8 +3,7 @@ const routes = require("./routes");
 
 const app = express();
 const port = process.env.PORT || "3000";
-app.set("port", port);
 
-app.use('/', routes);
-
-app.listen(port, () => console.log(`Server running on localhost:${port}`));
+// Configure routes
+app.use(express.json());
+app.use("/", routes);
